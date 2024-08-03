@@ -12,9 +12,7 @@ import UserContextProvider from './Helper/UserContextProvider';
 import axios from 'axios';
 
 import CategoryPage from './Components/CategoryPage';
-
-
-
+import ScrollToTopButton from './Components/ScrollToTopButton';
 
 function App() {
   
@@ -39,6 +37,7 @@ function App() {
       <Route path="/:product" element={<Products/>}></Route>
 
 </Routes>
+<ScrollToTopButton/>
 </BrowserRouter>
     </UserContextProvider>
   );
